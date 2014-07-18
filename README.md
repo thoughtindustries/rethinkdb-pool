@@ -31,6 +31,15 @@ co(function *() {
 });
 ```
 
+How does this differ from...
+----------------------------
+
+ - [rethinkdbdash](https://github.com/neumino/rethinkdbdash): We use the official rethinkdb driver.
+ - [hden's rethinkdb-pool](https://github.com/hden/rethinkdb-pool): We return promises and you only have to carry around one `r` object, not an `r` and a `pool`.
+
+Also...
+-------
+
 It automatically `.toArray()`'s cursors, so you should never have to deal with cursors directly, nor have to worry about releasing the pool connection after you are done with the cursor. There is currently no provision if you _want_ to deal with cursors directly, but it looks like the official RethinkDB connection pool will.
 
 This monkeypatches the `r` namespace, which is definitely a no-no, but is also the cleanest way I could come up with to only pass around one object (`r`) when making queries.
