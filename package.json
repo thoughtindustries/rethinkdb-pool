@@ -1,0 +1,16 @@
+{
+  "name": "ti-rethinkdb-pool",
+  "version": "0.0.3",
+  "repository": "thoughtindustries/rethinkdb-pool",
+  "description": "A connection pool for RethinkDB.",
+  "keywords": [
+    "rethinkdb",
+    "pool",
+    "connection pool"
+  ],
+  "dependencies": {
+    "bluebird": "^2.2.2",
+    "rethinkdb": "^1.13.0-2"
+  },
+  "license": "MIT"
+}
