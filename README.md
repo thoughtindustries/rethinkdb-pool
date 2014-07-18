@@ -1,7 +1,7 @@
 rethinkdb-pool
 ==============
 
-A Node.JS Connection Pool for RethinkDB.
+A Node.JS Connection Pool for RethinkDB that returns promises.
 
 RethinkDB is [Actively working on](https://github.com/rethinkdb/rethinkdb/issues/281) their own connection pool for all the official drivers, which is super great and once that is out you should definitely use that instead of this.
 
